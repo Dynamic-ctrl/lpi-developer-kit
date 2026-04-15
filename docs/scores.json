@@ -102,5 +102,13 @@
     "max": 5,
     "pct": 100,
     "updated": "2026-04-15T21:16:55.983Z"
+  },
+  "navneet-kumar": {
+    "name": "Navneet Kumar",
+    "level": 2,
+    "score": 3,
+    "max": 5,
+    "pct": 60,
+    "updated": "2026-04-15T22:32:22.746Z"
   }
 }
