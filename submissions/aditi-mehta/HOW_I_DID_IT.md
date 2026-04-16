@@ -9,6 +9,7 @@ I did a mistake right at the beginning because I typed `node -version` instead o
 ### What I learned that I didn't know before
 In normal software projects, my brain usually goes straight to setting up the backend logic and figuring out API routes. Reading up on the SMILE framework made me realize that for digital twins, you have to think about the entire lifecycle and predictive simulation first. It was a good lesson that building AI agents isn't just about fetching data, but designing a system that can actually anticipate future scenarios over time.
 
+
 # How I Did It - Level 3
 
 ### What I did, step by step
@@ -18,4 +19,4 @@ I decided to keep it simple and write a plain Python script instead of using a h
 The biggest headache was getting the Node server to actually respond to my Python script. My code kept hanging, and I eventually figured out that the node process was waiting for a newline character (`\n`) at the end of the JSON payload to know the request was finished. Once I appended that to my `json.dumps()` call, it worked perfectly. I also had to tweak my LLM prompt a few times because the model kept blending the information without citing its sources, so I had to make the citation rule very strict.
 
 ### What I learned that I didn't know before
-I learned a lot about how MCP actually works under the hood. I am used to just hitting standard REST APIs for everything, so passing JSON-RPC data over standard input and output streams locally was a new concept for me. It made me realize how efficiently you can string these tools together entirely on your own machine without needing to deal with web endpoints or network latency.
+I learned a lot about how MCP actually works under the hood. I am used to just hitting standard REST APIs for everything, so passing JSON-RPC data over standard input and output streams locally was a new concept for me. It made me realize how efficiently you can string these tools together entirely on your own machine without needing to deal with web endpoints or network latency.                 
