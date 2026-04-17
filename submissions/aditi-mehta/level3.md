@@ -1,7 +1,7 @@
 # Level 3 Submission - Aditi Mehta
 
 ### Agent Description
-Instead of a basic chatbot, I built the **SMILE Gap Analyzer (The Critic Agent)**. It acts as a Senior Architect that audits a user's digital twin concept against the SMILE framework to find physical, human, and architectural blind spots. I chose to build this using raw Python to understand MCP communication under the hood. I engineered a **stateless IPC bridge** using `subprocess.communicate()` to handle tool calls, which solved the `BrokenPipeError` and terminal freezing issues found in persistent streams.
+Instead of a basic chatbot, I built the **SMILE Gap Analyzer (The Critic Agent)**. It acts as a Senior Architect that audits a user's digital twin concept against the SMILE framework to find physical, human, and architectural blind spots. I chose to build this using raw Python to understand MCP communication under the hood. I built a **stateless IPC bridge** using `subprocess.communicate()` to handle tool calls, which solved the `BrokenPipeError` and terminal freezing issues found in persistent streams.
 
 ### LPI Tools Referenced
 1. `smile_overview` — Audits high-level architecture phases.
@@ -33,4 +33,4 @@ PROVENANCE - Every critique traced to its LPI source:
 ```
 
 ### Security Awareness
-I implemented a **regex-based sanitization layer** that scrubs the terminal input for special characters and command injections before the data ever touches the LLM or the MCP server. Additionally, the move to a **stateless subprocess bridge** provides a security boundary; because each tool call is a fresh process, it prevents memory leaks or state-injection attacks that can plague persistent `stdio` streams.
+I implemented a **regex-based sanitization layer** that sanitizes the terminal input for special characters and command injections before the data ever goes to the LLM or the MCP server. Additionally, **stateless subprocess bridge** provides a security boundary; because each tool call is a fresh process, it prevents memory leaks or state-injection attacks that can stop persistent `stdio` streams.

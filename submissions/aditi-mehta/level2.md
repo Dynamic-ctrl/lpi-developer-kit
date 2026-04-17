@@ -112,7 +112,5 @@ In summary, the SMILE methodology provides a structured way to understand an ind
 solutions, recognize limitations that guide effective resource allocation, and evaluate which strategies are most promising. When applied to creating a personal digital twin, it can lead to more 
 informed decisions about how to improve one's quality of life through technology and optimization.
 
-
-
 ## What surprised me about SMILE?
 The most surprising part of the SMILE framework is how heavily it relies on predictive simulation before any real action is taken. In typical software projects, we usually build a system to just react to incoming data, but this methodology expects the AI to actively forecast what will happen next. It fundamentally changes the role of an agent from just being a tool that fetches data to something that actually anticipates problems.
