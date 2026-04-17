@@ -26,7 +26,7 @@ Auditing Architecture Concept: 'I want to build a digital twin of a downtown tra
 ```
 *(My codebase successfully parses the `result.content[0].text` from the LPI server for each of these 4 tools and feeds it to the local Qwen LLM).*
 
-### Evidence of Explainability (XAI)
+### Explainability
 If a user asks my agent, *"Why did you recommend this?"*, they don't even have to ask—the agent is hardcoded to tell them upfront. 
 
 To prevent the LLM from hallucinating fake tools, I implemented **Few-Shot Template Forcing**. The system prompt explicitly restricts the local model to the real LPI tool names and forces it to front-load every single architectural critique with its exact data source. 
