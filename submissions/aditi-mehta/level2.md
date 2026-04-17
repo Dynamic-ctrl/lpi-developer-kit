@@ -1,16 +1,16 @@
 # Level 2 Submission - Aditi Mehta
 
-## Tracks Selected
+## Track Selected
 - **Track A:** Agent Builders
 
 ##  Test client output
-```text
-> lpi-developer-kit@1.0.0 test-client
-> npm run build && node dist/test-client.js
+
+lpi-developer-kit@1.0.0 test-client
+npm run build && node dist/test-client.js
 
 
-> lpi-developer-kit@1.0.0 build
-> tsc
+lpi-developer-kit@1.0.0 build
+tsc
 
 === LPI Sandbox Test Client ===
 
@@ -56,7 +56,7 @@ Failed: 0/8
 
 All tools working. Your LPI Sandbox is ready.
 You can now build agents that connect to this server.
-~~
+
 ## LLM Output
 I **chose** to run the **qwen2.5:1.5b** model locally via Ollama because its lightweight architecture makes it highly optimized for edge-native inference without sacrificing reasoning capabilities.
 
@@ -115,5 +115,4 @@ informed decisions about how to improve one's quality of life through technology
 
 
 ## What surprised me about SMILE?
-What surprised me most about the S.M.I.L.E. methodology is its inversion of the traditional data-pipeline approach. Instead of merely aggregating raw telemetry, it enforces the mapping of sociotechnological boundaries through the 'Reality Canvas' first. The concept of building a Minimal Viable Twin (MVT) to validate hypotheses virtually before executing physical integrations is a highly efficient way to de-risk complex AI deployments.
-
+The most surprising part of the SMILE framework is how heavily it relies on predictive simulation before any real action is taken. In typical software projects, we usually build a system to just react to incoming data, but this methodology expects the AI to actively forecast what will happen next. It fundamentally changes the role of an agent from just being a tool that fetches data to something that actually anticipates problems.
